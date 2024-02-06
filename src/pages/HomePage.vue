@@ -25,9 +25,10 @@ export default {
           <img :src="`${store.serverUrl}/storage/${cocktail.image}`" alt="">
           <div class="card-body">
             <h4>{{ cocktail.name }}</h4>
-            <h6>{{ cocktail.glass_type }}</h6>
-            <h6>{{ cocktail.instruction }}</h6>
+            <h6>Bicchiere: {{ cocktail.glass_type }}</h6>
+            <h6>Ricetta: {{ cocktail.instruction }}</h6>
           </div>
+          <router-link :to="{name: 'single-cocktail', params: {slug: cocktail.slug}}">Dettagli</router-link>
         </div>
       </div>
     </div>
