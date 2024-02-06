@@ -25,7 +25,6 @@ export default {
           <img :src="`${store.serverUrl}/storage/${cocktail.image}`" alt="">
           <div class="card-body">
             <h4>{{ cocktail.name }}</h4>
-            <h6>{{ cocktail.slug }}</h6>
             <h6>{{ cocktail.glass_type }}</h6>
             <h6>{{ cocktail.instruction }}</h6>
           </div>
